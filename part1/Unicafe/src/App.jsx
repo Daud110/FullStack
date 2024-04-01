@@ -15,14 +15,16 @@ const Statistics = (props) => {
       )
   }
   return (
-    <div>
-      <StatisticLine text = "good" value = {props.good} /> 
-      <StatisticLine text =  "neutral" value =  {props.neutral} /> 
-      <StatisticLine text  = "bad" value =  {props.bad} />  
-      <StatisticLine text =  "total" value = {props.total} /> 
-      <StatisticLine text = "avarage" value = {props.avarage}/> 
-      <StatisticLine text = "positive" value = {props.positive} />
-    </div>
+    <table> 
+      <tbody>
+        <StatisticLine text = "good" value = {props.good} /> 
+        <StatisticLine text =  "neutral" value =  {props.neutral} /> 
+        <StatisticLine text  = "bad" value =  {props.bad} />  
+        <StatisticLine text =  "total" value = {props.total} /> 
+        <StatisticLine text = "avarage" value = {props.avarage}/> 
+        <StatisticLine text = "positive" value = {props.positive} />
+      </tbody>
+    </table>
   )
 }
 
